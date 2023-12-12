@@ -1,0 +1,512 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Meddon&display=swap');
+@import "react-datepicker/dist/react-datepicker.css";
+
+
+$light-green: #70B8A7;
+$dark-green: #007357;
+$text-light: #D9D9D9;
+$text-dark: #373737;
+$background-light: #a9a9a9;
+$darkest-dark: #212121;
+
+
+body {
+    background: #373737;
+    font-family: 'Inter', sans-serif;;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.logo {
+    height: 3.125rem;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.login-logo {
+    height: 5.625rem;
+    padding: 1.25rem;
+}
+
+button.btn.log-off-button {
+    margin-right: 1.25rem;
+    text-decoration: none;
+    color: $text-light;
+    font-size: 1.5rem;
+
+    &:hover {
+        color: $text-light;
+        text-shadow:
+        0 0 10px #3ad9c9;
+        transform: scale(1.1);
+    }
+
+    &:active {
+        color: $text-light;
+        transform: scale(0.9);
+    }
+
+}
+
+.create-icon {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+}
+
+button.btn.icon-button {
+    background-color: $light-green;
+    border: none;
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 0 1rem 0 1rem;
+    color: $text-dark;
+
+    &:hover {
+        background-color: $dark-green;
+        transform: scale(1.1);
+        text-shadow: 0 0 5px #001f1c;
+    }
+
+    &:active {
+        background-color: $light-green;
+        transform: scale(0.8);
+    }
+
+}
+
+.main-container {
+    margin: 7rem auto auto;
+    width: 80%;
+    color: $text-light;
+}
+
+.table-header {
+    padding: 0.5rem;
+    color: $text-light;
+    font-size: 2.7rem;
+    background-color: $text-dark;
+}
+
+
+#item-title {
+    display: flex;
+    flex: 7;
+    padding: 0.7rem;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: $darkest-dark;
+    font-size: 1.3rem;
+    color: $text-light;
+
+    &:hover {
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(0.98);
+        cursor: pointer;
+    }
+
+    span {
+        align-items: center;
+        justify-content: left;
+    }
+
+}
+
+button.item-btn.btn.btn-info.btn-sm {
+    background-color: $light-green;
+    font-size: 1.4rem;
+    color: $text-dark;
+    border: none;
+    margin: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &:hover {
+        background-color: $light-green;
+        transform: scale(1.04);
+    }
+
+    &:active {
+        background-color: $dark-green;
+        color: $text-light;
+        transform: scale(0.95);
+    }
+
+}
+
+.row {
+    display: flex;
+  }
+
+
+.manager-btn-container {
+    width: 100%;
+  }
+
+#accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $light-green;
+    border: none;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    color: $text-dark;
+
+    .accordion-button {
+        background-color: $light-green;
+        padding: 1.7rem;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        outline: none;
+
+        &:hover {
+            background-color: $dark-green;
+            color: $text-light;
+        }
+
+        &:not(.collapsed) {
+            color: $text-dark;
+            outline: none;
+            box-shadow: none;
+
+            &:hover {
+                background-color: $dark-green;
+                color: $text-light;
+            }
+        }
+
+        .media-icon {
+            font-size: 1.6rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &:hover{
+        background-color: $dark-green;
+        color: $text-light;
+    }
+}
+
+.accordion-content {
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+        font-size: 1.7rem;
+    }
+    p {
+        margin-right: 1rem;
+    }
+
+    .align-btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .description-hashtags-btn {
+            background-color: $light-green;
+            color: $text-dark;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+            outline: none;
+            border: none;
+
+            &:hover {
+                background-color: $dark-green;
+                color: $text-light;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.carousel-container {
+    margin: 4rem auto 4rem;
+    background-color: $background-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 32rem;
+
+    img {
+        max-height: 32rem;
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+
+.create-edit-container {
+    margin-top: 2.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+     h4 {
+         color: $text-light;
+         padding-bottom: 2rem;
+     }
+
+    button.btn.save-button {
+        background-color: $dark-green;
+        color: $text-light;
+        border: none;
+        width: 50%;
+        display: block;
+        margin: 5rem auto auto;
+
+        &:hover {
+            filter: brightness(80%);
+            transform: scale(1.1);
+        }
+
+        &:active {
+            filter: brightness(80%);
+            transform: scale(0.95);
+        }
+    }
+
+}
+
+.post-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .hide-input {
+        display: none;
+    }
+}
+
+.placeholder-my-carousel {
+    width: 100%;
+    height: 25vh;
+    background-color: $darkest-dark;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    min-width: 100%;
+    min-height: 25vh;
+    box-sizing: border-box;
+}
+
+.post-details {
+    text-align: right;
+    color: $text-light;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    label {
+        display: block;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        text-align: right;
+    }
+
+    input, textarea {
+        display: block;
+        font-size: 1.3rem;
+        min-height: 3.125rem;
+        overflow-y: hidden; 
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: right;
+        background-color: $text-dark;
+        color: $text-light;
+
+    }
+}
+
+.vertical-divider {
+    border-left: 1px solid $text-light;
+    height: 100%;
+    margin: 0 1.25rem;
+}
+
+.modal {
+    padding: 2rem;
+
+    .modal-header {
+        padding: 2rem;
+        color: $text-dark;
+    }
+
+    .modal-body {
+        padding: 2rem;
+        color: $text-dark;
+        font-size: 1.3rem;
+
+        h4 {
+            color: $dark-green;
+            font-size: 1.6rem;
+        }
+
+        p {
+            margin-bottom: 3rem;
+        }
+
+        .text-right {
+            text-align: end;
+        }
+    }
+
+    button.btn.modal-edit-btn {
+        background-color: $light-green;
+        font-size: 1.3rem;
+        color: $text-dark;
+
+        &:hover {
+            background-color: $dark-green;
+            color: $text-light;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            background-color: $dark-green;
+            color: $text-light;
+            transform: scale(0.95);
+        }
+    }
+}
+
+
+.date-picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .post-datepicker {
+        border: none;
+        width: 100%;
+        background-color: $text-light;
+        color: $text-dark;
+    }
+
+    .calendar-icon {
+        font-size: 1.5rem;
+        color: $text-dark;
+        margin-left: 1rem;
+    }
+
+    .react-datepicker-wrapper {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+    }
+}
+.post-divider {
+    border-left: 1px solid $dark-green;
+    height: 100%;
+}
+
+#post-btn {
+    color: $text-light;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    background-color: $dark-green;
+    outline: none;
+    border: none;
+
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+
+.login-form {
+    margin: 4rem auto;
+    max-width: 50rem;
+    width: 70%;
+    color: $text-light;
+    font-size: 1.7rem;
+
+    #login-title {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .label {
+        margin-top: 2.5rem;
+    }
+
+    .input {
+        background-color: $text-light;
+        color: $text-dark;
+        font-size: 1.3rem;
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(44, 197, 160, 0.25);
+            border-color: rgba(13, 253, 197, 0.25);
+        }
+    }
+
+    #login-button {
+        background-color: $light-green;
+        color: $text-dark;
+        font-size: 1.5rem;
+        border: none;
+        margin: 2rem;
+
+        &:hover {
+            background-color: $dark-green;
+            color: $text-light;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            background-color: $dark-green;
+            color: $text-light;
+            transform: scale(0.95);
+        }
+
+        .icon {
+            padding-left: 1rem;
+        }
+    }
+}
+
+button.btn.upload-button {
+    background-color: $dark-green;
+    font-weight: bold;
+    color: $text-light;
+    border: none;
+
+    &:hover {
+        filter: brightness(80%);
+        transform: scale(1.1);
+    }
+
+    &:active {
+        background-color: $dark-green;
+        filter: brightness(80%);
+        transform: scale(0.95);
+    }
+}
