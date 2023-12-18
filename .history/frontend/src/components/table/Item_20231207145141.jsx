@@ -43,10 +43,19 @@ const Item = ({ data }) => {
                         <span>{data.title}</span>
                     </Col>
                     <Col xl={3} lg={4} md={4} sm={6} xs={6} className="item-actions">
+
+                        {/* <Col xs={4}>
+                        <div className='item-btn-container'> */}
                             {currentUserID === data.user ? 
                             <Button className="item-btn" variant="info" size="sm" onClick={handleEdit}>Edit</Button> :
                             <Button disabled className="item-btn" variant="info" size="sm" onClick={handleEdit}>Edit</Button> }
+                        {/* </div>
+                        </Col>
+                        <Col xs={8}> */}
+                        {/* <div className='item-btn-container'> */}
                             <Button className="item-btn" variant="info" size="sm" onClick={handleMediaManager}>Media Manager</Button>
+                        {/* </div>
+                        </Col> */}
                     </Col>
                 </Row>
             </Container>

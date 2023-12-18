@@ -16,8 +16,8 @@ const Table = () => {
     return (
         <Container fluid className="main-container">
             <Row className="table-header">
-                <Col xl={9} lg={8} md={8} sm={6} xs={6}>Articles</Col>
-                <Col xl={3} lg={4} md={4} sm={6} xs={6}>Actions</Col>
+                <Col xl={8} lg={8} md={8} sm={6} xs={6}>Articles</Col>
+                <Col xl={4} lg={4} md={4} sm={6} xs={6}>Actions</Col>
             </Row>
             <List/>
         </Container>
