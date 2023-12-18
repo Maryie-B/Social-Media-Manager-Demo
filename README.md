@@ -11,6 +11,25 @@ This project is centered around the implementation of authentication mechanisms 
 ## User Flow: 
 The user has to first log-in, in order to gain access to the posts and the manager: 
 
+![Login Page](https://github.com/Maryie-B/Social-Media-Manager-Demo/blob/639a073dd1f61a07c1f17a0274a71b901c893bd0/images/Login.png)
+
+On the home page, there is a table containing all the posts available to edit and schedule for posting (with the Media Manager button). Clicking on the title will open a preview of the post in a modal, that gives the user the ability to navigate to the Edit page. 
+
+![Home Page](https://github.com/Maryie-B/Social-Media-Manager-Demo/blob/639a073dd1f61a07c1f17a0274a71b901c893bd0/images/Home-Page.png)
+
+![Modal](https://github.com/Maryie-B/Social-Media-Manager-Demo/blob/639a073dd1f61a07c1f17a0274a71b901c893bd0/images/Modal.png)
+
+On the Manager page the user can either edit the post or schedule a post to be made on the specific platform: 
+
+![Manager](https://github.com/Maryie-B/Social-Media-Manager-Demo/blob/639a073dd1f61a07c1f17a0274a71b901c893bd0/images/Manager.png)
+
+The Edit button from every page redirects the user to the edit page, where they can make changes to the post sections or add more photos. The save button only activates if changes have been made. 
+
+![Edit page](https://github.com/Maryie-B/Social-Media-Manager-Demo/blob/639a073dd1f61a07c1f17a0274a71b901c893bd0/images/Edit.png)
+
+Finally, to create a new component the user can click on the small + icon at the bottom right of the screen and be redirected to the create page: 
+
+![Create page](https://github.com/Maryie-B/Social-Media-Manager-Demo/blob/639a073dd1f61a07c1f17a0274a71b901c893bd0/images/Create.png)
 
 
 ## Installation
